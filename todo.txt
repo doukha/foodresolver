@@ -1,0 +1,12 @@
+Front:
+
+[ ] Récupérer les données saisis et tester l'envoie de l'objet avec put
+[ ] Mettre en place un service RecipeService et un model Recipe.
+[ ] Une page d'Authentification ?
+
+Back :
+
+
+En générale :
+
+[ ] Ecrire la requete qui récupère une liste de recette en fonction des ingrédients

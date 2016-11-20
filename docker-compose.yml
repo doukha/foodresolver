@@ -1,0 +1,22 @@
+client:
+  build: ./dockerfiles/front
+  expose:
+    - "4200"
+  ports:
+    - "4200:4200"
+  volumes:
+    - ./src/main/recipefront:/mnt/foodresolver
+  command: npm start
+  links:
+    - back
+
+back:
+  build: ./dockerfiles/springboot
+  expose:
+    - "8080"
+  ports:
+    - "9090:8080"
+  volumes:
+    - $HOME/.m2:/root/.m2
+    - .:/mnt/foodresolver
+  command: mvn spring-boot:run
