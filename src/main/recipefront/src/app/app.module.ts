@@ -6,12 +6,14 @@ import { APP_ROUTER_PROVIDER } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { CreateRecipePageComponent } from './create-recipe-page/create-recipe-page.component';
+import { RecipesComponent } from './recipes-page/recipes.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreateRecipePageComponent
+    CreateRecipePageComponent,
+    RecipesComponent
   ],
   imports: [
     BrowserModule,

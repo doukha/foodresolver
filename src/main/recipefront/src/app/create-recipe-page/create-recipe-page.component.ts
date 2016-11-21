@@ -2,6 +2,9 @@ import { Http } from '@angular/http';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map'
+import { Recipe, RecipeService } from '../shared';
+import { FormGroup, FormControl } from '@angular/forms';
+
 
 
 @Component({
@@ -17,7 +20,7 @@ export class CreateRecipePageComponent implements OnInit {
   description: string;
   note: string;
 
-  constructor(private http: Http) { }
+  constructor(private http: Http, private recipeService: RecipeService) { }
 
   ngOnInit() {
   }
@@ -29,7 +32,7 @@ export class CreateRecipePageComponent implements OnInit {
     }
 
     let oo = {
-      "title": "fffff", "description": "mlmlm","note":"genre note"
+      "title": "fffff", "description": "mlmlm", "note": "genre note"
     }
     //send form wit http channel
     debugger;
@@ -39,6 +42,14 @@ export class CreateRecipePageComponent implements OnInit {
       console.log("status" + s)
 
     });
+
+    //clean
+    // 1 ) fill model
+    // 2 ) call service to persist data
+
+    let recipe:Recipe;
+    this.recipeService.save(recipe);
+
   }
 
   private broo(oo): Observable<any> {
