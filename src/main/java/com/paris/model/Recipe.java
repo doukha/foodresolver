@@ -9,6 +9,7 @@ import java.util.List;
  */
 public class Recipe {
 
+    public static final int hh=8;
     @MongoId
     private String id;
     private String title;

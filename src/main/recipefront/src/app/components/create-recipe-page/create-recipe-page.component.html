@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Recipe Form</h1>
+  <form #theForm="ngForm">
+    <div class="form-group">
+      <label for="title">Titre de la recette</label>
+      <input [(ngModel)]="recipe.title" name="title" type="text" class="form-control" id="name" required>
+    </div>
+    <div class="form-group">
+      <label for="cookingTime">Durée de cuisson</label>
+      <input [(ngModel)]="recipe.cookingTime" name="cookingTime" type="text" class="form-control" id="cookingTime">
+    </div>
+    <div class="form-group">
+      <label for="preparationTime">Durée de préparation</label>
+      <input [(ngModel)]="recipe.preparationTime" name="preparationTime" type="text" class="form-control" id="preparationTime">
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea [(ngModel)]="recipe.description" name="description" rows="3" class="form-control" id="description"> </textarea>
+    </div>
+    <div class="form-group">
+      <label for="note">Remarques</label>
+      <input [(ngModel)]="recipe.note" name="note" type="text" class="form-control" id="note">
+    </div>
+    <button type="submit" (click)="submit()" [disabled]="!theForm.form.valid">Submit</button>
+  </form>
+</div>

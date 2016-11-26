@@ -5,8 +5,9 @@ import { HttpModule } from '@angular/http';
 import { APP_ROUTER_PROVIDER } from './app.routes';
 
 import { AppComponent } from './app.component';
-import { CreateRecipePageComponent } from './create-recipe-page/create-recipe-page.component';
-import { RecipesComponent } from './recipes-page/recipes.component';
+import { CreateRecipePageComponent, RecipesComponent } from 'components';
+import { RecipeService } from 'shared';
+
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { RecipesComponent } from './recipes-page/recipes.component';
     HttpModule,
     APP_ROUTER_PROVIDER
   ],
-  providers: [],
+  providers: [RecipeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
