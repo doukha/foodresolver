@@ -1,0 +1,19 @@
+platform: linux
+image_resource:
+  type: docker-image
+  source: {repository: "maven", tag : "latest"}
+
+inputs:
+- name: src
+- name: resource-version
+outputs:
+- name: jar
+- name: info
+
+run:
+  dir: src
+  path: sh
+  args:
+    - -exc
+    - |
+      mvn install

@@ -1,0 +1,48 @@
+resources:
+- name: test-unit
+  type: git
+  source:
+    - uri: git@github.com:doukha/foodresolver.git
+      branch: dev
+      private_key: "-----BEGIN RSA PRIVATE KEY-----
+                    Proc-Type: 4,ENCRYPTED
+                    DEK-Info: AES-128-CBC,24AEB66774DD21F3ADBC5E9875C4CF53
+
+                    C1ssY56yjxLWw4gRY6oXHsw/mDCsXtZF+gBVgzueNTTQwk5miewIV4Xe3IEPlXLs
+                    b0Rzd2rEcmaTGHN0zJfPR1odO435CVs29dZ+FoSRwTO43Tq0+MZD3H2LSFT0Y9wj
+                    iq/tzxlczGbKfgj5Koo8j6Eij8VYfSGciwCGrv57Kw/DMY8r0FWv4r+U8HjThbRv
+                    ftW26LXqA7hDP5xq1fQ6R1S83gNNo3vsovaMsNhqlMzpky9Kx46VBWDrlGC7Yzvk
+                    xp1CxaU1YX1Jxr0vHGODcZxZKosCnCT6IchMj/8lX6YDfWTUc+HXn1VJ2mZzxHKw
+                    PFLtTgWCbgfgdarMEEZ8TucTeByITNhFDp9rAcAi+9pw1W6OgVVgw1CCPq0jBI59
+                    hlbX40MUv1p5WSM9liMY3f4xZ5hNZIyFcGaHW15L5Bp/kRKvSB1Alm4iZGsD44Zh
+                    r7oq5s/6SZXGMvQJRsmDhNerqvTyVjHaSWClaNO4AdNsh5dOWWnKqY6lNCU0IqqW
+                    33HolCmU/uBARYhc75e7/NxOs7AFJYjyHIMvEsPtnYtOd7T5ZXY90R46gIOnU/fq
+                    UMsSyTCeOUYFGg2bdjqhwRTA0WtDjZAJJw0klrIPXNgx9U/RTP0GMF42tpOzmh1a
+                    Qz2F32tNHVgFx2uXimQCaZFRFeAGqN0VFWIjSR8y1ZxaxevghxpuDo2YX3BgxdTy
+                    AZBUQkaSxZFh4foI8WwIE+IMmCm/gM07wS+pknRL3msU74YZ576csLfWRX6ZobZH
+                    hADC4Uo6IlmaEXFOn6e2MeNPzX6dpa7ahlV1zofsZaAEfC+MCPdFbBM8vR/KLGLG
+                    AF5oqsqiKVWuc9DiKCxwriWJGoGRKnGsA+ZWhNDElblyozFjexLvnDDQPwyrTw7Q
+                    96jUqLw8Q2RGpzg2wvAYUDxKt2+4tGkWzA5IJZ/wAWI0uVDn8SqNDALVt9gEhYn1
+                    PYNGoJNUj5GdmoAJ6aS3RVQTyZ8OnTuUFKkdyKXnuLxZzHc7kzlW8yuYptXaLk16
+                    Gfmb2tgUPd7SUyCVNQsG6wQphuDapNNWB2weYorrD104ISm++b59CpoHWSU6BrN7
+                    YbNTG4wX2SRlaOSEYNsQcLxg9alMPfU7ntjypkUr3NIt5HELM2S3xOfneN4L+7Gr
+                    r4scGy+cv9bEA/ObGnf2krlmk/622IPvQ2j+SI7Z0llGz4ezIokmz4+maJC91MNa
+                    re/VkQx+lJHjf6IFExAlCR4ViEoTpelqX0aZJJuZd7IiGa7I28z1GQRfpGkojDzC
+                    RdC5b6HSgMENOrAb2a+oZsCb0cXVTvloomBN+kyX7pJz5DbYzFY+7/EgiZj8QDg1
+                    VIism18AjUSOIVjjaFyxx4Qw0aNoTS7gKXJACslvJcUU7Ywe0XYttZce3rMhLgbM
+                    +gG2ruEIWBcGe2O+Py05jUfeTi9dauHco6lXQZbGsgML1v0CtrAzQZ13kgjG4Sny
+                    FOKAjseCgu34MAd4QQde4EZ+X2eYQAFB9giw1X3lMkKiKEIAYtq55jaFrDbJsUTt
+                    QcTKeSmlapKHSzttqNb7UtE0obHKKFxK8QZTZ4tjG/0nmR/C6p6HjW7xVQxp08UY
+                    -----END RSA PRIVATE KEY-----
+"
+
+
+
+jobs:
+- name: recipe-test
+  plan:
+    - get: test-unit
+      trigger: true
+    - task: verify-test
+      file: build-test.yml
+

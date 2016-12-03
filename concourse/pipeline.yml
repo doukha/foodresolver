@@ -1,0 +1,17 @@
+resources:
+- name: test-unit
+  type: git
+  source:
+    - uri: git@github.com:doukha/foodresolver.git
+      branch: dev
+
+
+
+jobs:
+- name: recipe-test
+  plan:
+    - get: test-unit
+      trigger: true
+    - task: verify-test
+      file: build-test.yml
+

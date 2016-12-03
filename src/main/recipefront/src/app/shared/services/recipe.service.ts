@@ -14,8 +14,6 @@ export class RecipeService {
         return this.http.post("/api/recipe/save", recipe)
             .map(
             (res) => {
-                // console.log(res.text());
-                // console.log("JSON" + JSON.parse(res.text()));
                 return res => JSON.parse(res.text())
             }
             )
