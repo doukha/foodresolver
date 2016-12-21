@@ -4,12 +4,10 @@ image_resource:
   source: {repository: "maven", tag : "latest"}
 
 inputs:
-- name: src
+- name: test-unit
+
+outputs:
+- name: built-test
 
 run:
-  dir: src
-  path: src
-  args:
-    - -exc
-    - |
-      mvn install
+  path: mvn install
