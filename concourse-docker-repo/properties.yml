@@ -1,2 +1,30 @@
 github-project: git@github.com:doukha/foodresolver.git
 project: foodresolver
+github-private-key: |
+        -----BEGIN RSA PRIVATE KEY-----
+         MIIEogIBAAKCAQEAoZ1bTuRrPw1ZPvr+9e07IYF/+dsh2i/zm8dqJm2T3L034a2x
+         YCnoyZDQgRa93BJo8NZ8L9kB7nPyRlZEsH/W2mvsjD1uwkG5R0IF1wi0NOUMSb7a
+         YQLn/bnWaT5vWuGysA0fC/G5ETKJMkJb6k26WaSnLcCdZJbZK/gnAwW74/BUgf/h
+         qrQK145xryn2OhFZ18y37SZE+FCcmKMvfEwPNBeyhilFoQFlK56m3WXXoQdDA1GC
+         Zichb+89Jhtr+p7E8kIg4V0Z76fIm1lbAWUqIls5lxGciju84VB1oFkaMLNZkn+X
+         j32YIsru+Qv5+fMLbbolO/aeUFA1SW30ZnJulQIDAQABAoIBAB72kuPOh22RFSQn
+         2mkrhkSpFue7wASZY0bZMdEi9U05Q1eNe4o8/UiA4jGZNc7QCCL8NNbF8MTKmgQ3
+         yvk1xOgb/TnxGyNEjEbGs2+7TytDJtOKKTSk5eWKkTWgrJzw2Nc57FTRfu94iyiB
+         5jJBqg46qXzuhjkbXYg7Bt5hXtoQh2PszOV0lcNHpcnHpt9jz+XASiNc1DsnUuOz
+         RtibW0BPfBvYqplIU3Fh9SuYvsMv8LgpViqHTPZeDvtx5cWQY7fg4ulkWfJpCqV6
+         T2q+1MwixjHoxkgu34jkXlrXmS2zbC++4sZlmAg22HGbrChjKSgfuQJCuBG3tGDC
+         5erQUYECgYEA0nyfl3ipoMG7zCvds2uNx2sRcTbIMa4FGPlG7ojRP5FNtuCc+3bs
+         RdM+72X2r04LPjIId3BMoDrkAUmXV9+qfqQdbIwTHEpovOw2+Xw0QpByIaoEY962
+         2AMmiRKIUZe7Yuem+taYo2Vp1omxyiHRB7xMAZkdnc9ph7R6Hm+kxH0CgYEAxI9x
+         ucw69JFZbz/8Z9ofHHcA7RdGg6xATKyw7+NeWfWXvJ5a+xkkHRvAD+vvzXlCkMNh
+         DdFJgs3lsPF1IRVdSnWFnbIx3TZFYqbL1U5sCn8Ug7ouvIY5n/V9iGvEd+nbyeks
+         PGFMErcKeJQhjU3+QxNcAs+LjyI4hCSA3uZyZfkCgYAfw5LJ5vmiOto+S3hfdSGm
+         MHAnZ576cEpwpF2h7Z+2OhVCPc8y25V4TBK5SefaOKrVrfM9IwNNQtXZo+Nk7Wnr
+         RpTyJolTwZ7gs7zwFWBFk0rF7cRP1fI90uvjz5omxgEPQeoe/Hd4YPuB1rGv0T6c
+         LjxCGXswr3Y7dm7fXPW+eQKBgDhmhJZwkLYegtAWRyGxh93OE9j0JcqggW6+2qJq
+         1mbvvpNjyO1mAGPN06V96LhHxB7vwQiK9hHvbKoCDr7od3VnFWjzebVk3jH5dGGH
+         eB7m6gcGRGTaCuzoLxYW/i/+TY+5NXU54e840Gta7emy6HNsuakgzoXKpvbb1pKf
+         A1JZAoGAEdjhdBqgLkOPPZh/pd4zmXObrnDUQZhp+mcMtAJ+FRGvZeyEEetg30YK
+         s/5qlaXES0eRIUFnsxFHy1Pw0oGDRZKrTt8c+srJx/rmYjOkVdWzp9kr7lvDBg3c
+         TwWowwFG34jP4b7Xu995SvIIgsv2FsPSUWylTGQP0GZIT8dR8sc=
+        -----END RSA PRIVATE KEY-----

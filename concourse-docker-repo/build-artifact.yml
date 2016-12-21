@@ -4,11 +4,11 @@ image_resource:
   source: {repository: "maven", tag : "latest"}
 
 inputs:
-- name: test-unit
+- name: src
 
 outputs:
-- name: built-test
+- name: artifact
 
 run:
-  dir: test-unit/sh
-  path: ./run-package.sh
+  dir: src/sh
+  path: ./build-artifact.sh
