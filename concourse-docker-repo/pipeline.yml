@@ -6,6 +6,14 @@ resources:
       branch: concourse-in-progress
       private_key: {{github-private-key}}
 
+- name: package-artifact
+  type: git
+  source:
+    - uri: {{github-project}}
+      branch: concourse-in-progress
+      private_key: {{github-private-key}}
+
+
 
 
 jobs:
@@ -18,3 +26,12 @@ jobs:
         PROJECT: {{project}}
       file: test-unit/concourse-docker-repo/build-test.yml
 
+- name: artifact
+  plan:
+    - get: package-artifact
+      trigger: true
+      passed: [recipe-test]
+    - task: build-artifact
+      params:
+        PROJECT: {{project}}
+      file: package-artifact/concourse-docker-repo/build-artifact.yml

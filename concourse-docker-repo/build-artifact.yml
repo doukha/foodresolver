@@ -1,0 +1,14 @@
+platform: linux
+image_resource:
+  type: docker-image
+  source: {repository: "maven", tag : "latest"}
+
+inputs:
+- name: test-unit
+
+outputs:
+- name: built-test
+
+run:
+  dir: test-unit/sh
+  path: ./run-package.sh
