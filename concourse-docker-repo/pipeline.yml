@@ -16,5 +16,5 @@ jobs:
     - task: build-test
       params:
         PROJECT: {{project}}
-      file: concourse-docker-repo/build-test.yml
+      file: test-unit/concourse-docker-repo/build-test.yml
 

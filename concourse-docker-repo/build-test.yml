@@ -5,14 +5,9 @@ image_resource:
 
 inputs:
 - name: src
-- name: resource-version
-outputs:
-- name: jar
-- name: info
 
 run:
   dir: src
-  path: sh
   args:
     - -exc
     - |
