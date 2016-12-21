@@ -20,7 +20,7 @@ public class LCOM {
     // ["A","B","M"] ["B","X","A"]
     // ["MC","AY"] ["MD","AY"] ["MD","ME"]
 
-    @Test
+//    @Test
     public void name() throws Exception {
         Relation R1 = new Relation(Arrays.asList("A"), Arrays.asList("B"), false);
         Relation R2 = new Relation(Arrays.asList("B"), Arrays.asList("X"), true);
@@ -59,7 +59,7 @@ public class LCOM {
         }
     }
 
-    @Test
+//    @Test
     public void test_fetch() throws Exception {
         Relation R1 = new Relation(Arrays.asList("A"), Arrays.asList("B"), false);
         Relation R2 = new Relation(Arrays.asList("B"), Arrays.asList("X"), true);

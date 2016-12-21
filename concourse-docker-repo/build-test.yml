@@ -10,4 +10,5 @@ outputs:
 - name: built-test
 
 run:
-  path: mvn install
+  dir: test-unit/sh
+  path: ./run-test.sh
